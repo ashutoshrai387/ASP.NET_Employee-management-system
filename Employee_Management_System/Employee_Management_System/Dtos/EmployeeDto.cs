@@ -1,7 +1,10 @@
-﻿namespace Employee_Management_System.Dtos
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Employee_Management_System.Dtos
 {
     public class EmployeeDto
     {
+        [Key]
         public int Id { get; set; }
 
         public string Name { get; set; }

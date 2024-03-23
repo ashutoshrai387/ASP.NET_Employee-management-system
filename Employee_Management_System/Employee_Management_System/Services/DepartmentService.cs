@@ -18,6 +18,7 @@ namespace Employee_Management_System.Services
         {
             var department = new Department
             {
+                Id = departmentDto.Id,
                 DepartmentName = departmentDto.DepartmentName
             };
 

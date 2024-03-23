@@ -16,7 +16,7 @@ namespace Employee_Management_System.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddEmployee([FromBody] EmployeeDto employeeDto)
+        public async Task<IActionResult> AddEmployee(int id, [FromBody] EmployeeDto employeeDto)
         {
             var addedEmployee = await _employeeService.AddEmployeeAsync(employeeDto);
             return Ok(addedEmployee);

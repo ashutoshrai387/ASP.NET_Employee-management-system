@@ -18,6 +18,7 @@ namespace Employee_Management_System.Services
         {
             var employee = new Employee
             {
+                Id = employeeDto.Id,
                 Name = employeeDto.Name,
                 Age = employeeDto.Age,
                 DepartmentId = employeeDto.DepartmentId,
